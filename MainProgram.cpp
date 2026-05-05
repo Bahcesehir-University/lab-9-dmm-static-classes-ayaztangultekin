@@ -158,6 +158,7 @@ IntArray::IntArray(const IntArray& other) {
     for(int i = 0; i<count; i++){
         data[i] = other.data[i];
     }
+    Tracker::objectCreated();
 
 }
 
